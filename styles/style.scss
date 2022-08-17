@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+}
+h1{
+    text-align: center;
+}
+.input-div{
+    background-color: wheat ;
+    display: block;
+    margin: 20px auto;
+    width: 350px;
+    padding: 10px;
+    .high-inputs{
+        width: 100%;
+        display: flex;
+        input{
+            margin-right: 20px;
+            width: calc(50% - 20px);
+        }
+    }
+    .labels{
+        display: flex;
+        p{
+            margin: 5px;
+            margin-left: 0px;
+        }
+        .duration-label{
+            width: 25%;
+        }
+        .work-label{
+            width: 50%;
+        }
+    }
+    .inputs{
+        width: 100%;
+        display: flex;
+        input,button{
+            margin-right: 20px;
+        }
+        .duration{
+            width: 25%;
+        }
+        .mission{
+            width: 50%;
+        }
+        button{
+            width: 25%;
+        }
+    }
+}
+.durations{
+    width: 350px;
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    .duration{
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        min-height: 50px;
+        border: 2px solid #000;
+        background-color: wheat;
+        div{
+            padding-left: 5px;
+            padding-right: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .time{
+            border-right: 2px solid #000;
+            width: 40%;
+        }
+        .mission{
+            width: 60%;
+            min-height: 100%;
+            line-height: 20px;
+        }
+    }
+}

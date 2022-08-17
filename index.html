@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <h1>day planner</h1>
+    <div class="input-div">
+        <div class="high-inputs">
+            <input type="text" placeholder="wake up time(8:30)" id="wakeUp">
+            <select name="type" id="type">
+                <option value="" disabled>-- select type --</option>
+                <option value="add mission" selected>add mission</option>
+                <option value="skip time">skip time</option>
+            </select>
+        </div>
+        <div class="labels">
+            <p class="duration-label">duration:</p>
+            <p class="mission-label">mission:</p>
+        </div>
+        <div class="inputs">
+            <input type="number" id="duration" class="duration" placeholder="minutes">
+            <input type="text" id="mission" class="mission" placeholder="what you will do?">
+            <button>add</button>
+        </div>
+    </div>
+    <div class="durations"></div>
     <script src="scripts/main.js"></script>
 </body>
 </html>

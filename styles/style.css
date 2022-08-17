@@ -1,3 +1,87 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+}
 
-/*# sourceMappingURL=style.css.map */
+h1 {
+  text-align: center;
+}
+
+.input-div {
+  background-color: wheat;
+  display: block;
+  margin: 20px auto;
+  width: 350px;
+  padding: 10px;
+}
+.input-div .high-inputs {
+  width: 100%;
+  display: flex;
+}
+.input-div .high-inputs input {
+  margin-right: 20px;
+  width: calc(50% - 20px);
+}
+.input-div .labels {
+  display: flex;
+}
+.input-div .labels p {
+  margin: 5px;
+  margin-left: 0px;
+}
+.input-div .labels .duration-label {
+  width: 25%;
+}
+.input-div .labels .work-label {
+  width: 50%;
+}
+.input-div .inputs {
+  width: 100%;
+  display: flex;
+}
+.input-div .inputs input, .input-div .inputs button {
+  margin-right: 20px;
+}
+.input-div .inputs .duration {
+  width: 25%;
+}
+.input-div .inputs .mission {
+  width: 50%;
+}
+.input-div .inputs button {
+  width: 25%;
+}
+
+.durations {
+  width: 350px;
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+}
+.durations .duration {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  min-height: 50px;
+  border: 2px solid #000;
+  background-color: wheat;
+}
+.durations .duration div {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+}
+.durations .duration .time {
+  border-right: 2px solid #000;
+  width: 40%;
+}
+.durations .duration .mission {
+  width: 60%;
+  min-height: 100%;
+  line-height: 20px;
+}/*# sourceMappingURL=style.css.map */
