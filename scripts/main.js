@@ -1,10 +1,16 @@
 const wakeUpInput=document.getElementById("wakeUp")
 const durationInput=document.getElementById("duration")
 const missionInput=document.getElementById("mission")
-let endTime
-let user={
+let user=JSON.parse(localStorage.getItem("user"))||{
     wakeUp:"",
-    missions:{}
+    missions:{},
+    endTime:undefined
+}
+let endTime=user.endTime
+if(user.missions){
+    for(let time in user.missions){
+        addDuration(time,user.missions[time])
+    }
 }
 function timeAdd(time,duration){
     let [hours,minutes]=time.split(":")
@@ -15,7 +21,7 @@ function timeAdd(time,duration){
         minutes-=60
         hours+=1
     }
-    if(minutes<10){
+    if((`${minutes}`.length)==1){
         minutes=`0${minutes}`
     }
     return `${hours}:${minutes}`
@@ -41,6 +47,7 @@ document.querySelector("button").addEventListener("click",(ev)=>{
     let wakeUp=wakeUpInput.value
     let duration=durationInput.value
     endTime=endTime||wakeUp
+    let time
     if(!wakeUp){
         alert("you must write your wake up time")
         return
@@ -49,11 +56,15 @@ document.querySelector("button").addEventListener("click",(ev)=>{
         return
     }else if(duration>=1440){
         alert("duration can't be more than day")
-    }
-    else{
+        return
+    }else{
+        time=`${endTime} -> ${timeAdd(endTime,duration)}`
         user.wakeUp=wakeUp
-        addDuration(`${endTime} -> ${timeAdd(endTime,duration)}`,missionInput.value)
+        addDuration(time,missionInput.value)
     }
     endTime=timeAdd(endTime,duration)
+    user.missions[time]=missionInput.value
+    user.endTime=endTime
+    localStorage.setItem("user",JSON.stringify(user))
     missionInput.value=null
 })
