@@ -86,5 +86,6 @@ document.querySelector(".reset").addEventListener("click",()=>{
     if(confirm("are you sure")){
         localStorage.removeItem("user")
         DurationsDiv.innerHTML=""
+        wakeUpInput.removeAttribute("disabled")
     }
 })
