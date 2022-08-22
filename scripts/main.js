@@ -71,6 +71,10 @@ document.querySelector(".inputs button").addEventListener("click",(ev)=>{
             missionInput.value=null
             return
         case "add mission":
+            if(!missionInput.value){
+                alert("mission can't be empty")
+                return
+            }
             time=`${endTime} -> ${timeAdd(endTime,duration)}`
             user.wakeUp=wakeUp
             addDuration(time,missionInput.value)
