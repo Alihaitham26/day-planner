@@ -14,41 +14,32 @@ h1{
     margin: 20px auto;
     width: 350px;
     padding: 10px;
-    .high-inputs{
+    .high-inputs,.inputs{
         width: 100%;
         display: flex;
+        justify-content: space-evenly;
         input{
-            margin-right: 20px;
-            width: calc(50% - 20px);
+            width: 40%;
         }
-    }
-    .labels{
-        display: flex;
+        .duration,.mission{
+            width: 40%;
+            input{
+                width: 100%;
+            }
+        }
+        button{
+            height: 30px;
+            width: 30px;
+            align-self: flex-end;
+            background-image: url("../images/add.png");
+            background-size: cover;
+        }
+        .reset{
+            background-image: url("../images/reset.png");
+        }
         p{
             margin: 5px;
             margin-left: 0px;
-        }
-        .duration-label{
-            width: 25%;
-        }
-        .work-label{
-            width: 50%;
-        }
-    }
-    .inputs{
-        width: 100%;
-        display: flex;
-        input,button{
-            margin-right: 20px;
-        }
-        .duration{
-            width: 25%;
-        }
-        .mission{
-            width: 50%;
-        }
-        button{
-            width: 25%;
         }
     }
 }
@@ -79,5 +70,14 @@ h1{
             min-height: 100%;
             line-height: 20px;
         }
+    }
+    .skip{
+        margin: 10px 0;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        min-height: 50px;
+        border: 2px solid #000;
+        background-color: wheat; 
     }
 }
