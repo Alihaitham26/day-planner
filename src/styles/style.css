@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13pt;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-div {
+  font-family: "Silkscreen", cursive;
+  background-color: #3c345c;
+  display: block;
+  margin: 20px auto;
+  width: 350px;
+  padding: 2px 40px;
+}
+.input-div h1 {
+  text-align: center;
+  color: #99a8bb;
+  font-size: 22pt;
+}
+.input-div .high-inputs, .input-div .low-inputs {
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.input-div .high-inputs input, .input-div .low-inputs input {
+  width: 45%;
+}
+.input-div .high-inputs .duration, .input-div .high-inputs .mission, .input-div .low-inputs .duration, .input-div .low-inputs .mission {
+  width: 45%;
+}
+.input-div .high-inputs .duration input, .input-div .high-inputs .mission input, .input-div .low-inputs .duration input, .input-div .low-inputs .mission input {
+  width: 100%;
+}
+.input-div .high-inputs p, .input-div .low-inputs p {
+  margin: 5px;
+  margin-left: 0px;
+}
+.input-div .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.input-div .buttons button {
+  width: 45%;
+  border: none;
+  background-color: #d6542c;
+  color: #fff;
+  height: 30px;
+}
+
+.missions {
+  width: 350px;
+  display: block;
+  margin: 20px auto;
+  font-size: 14pt;
+}
+.missions .duration {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  min-height: 50px;
+  border: 2px solid #000;
+  background-color: #124c81;
+}
+.missions .duration div {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+}
+.missions .duration .time {
+  border-right: 2px solid #000;
+  width: 40%;
+}
+.missions .duration .mission {
+  width: 60%;
+  min-height: 100%;
+  line-height: 20px;
+}
+.missions .skip {
+  margin: 10px 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-height: 50px;
+  border: 2px solid #000;
+  background-color: #124c81;
+}
+
+/*# sourceMappingURL=style.css.map */

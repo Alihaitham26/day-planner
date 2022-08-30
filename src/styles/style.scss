@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 13pt;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input-div{
+    font-family: 'Silkscreen', cursive;
+    background-color: #3c345c  ;
+    display: block;
+    margin: 20px auto;
+    width: 350px;
+    padding: 2px 40px;
+    h1{
+        text-align: center;
+        color: #99a8bb ;
+        font-size: 22pt;
+    }
+    .high-inputs,.low-inputs{
+        margin-bottom: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        input{
+            width: 45%;
+        }
+        .duration,.mission{
+            width: 45%;
+            input{
+                width: 100%;
+            }
+        }
+        p{
+            margin: 5px;
+            margin-left: 0px;
+        }
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        button{
+            width: 45%;
+            border: none;
+            background-color: #d6542c  ;
+            color: #fff;
+            height: 30px;
+        }
+    }
+}
+.missions{
+    width: 350px;
+    display: block;
+    margin: 20px auto;
+    font-size: 14pt;
+    .duration{
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        min-height: 50px;
+        border: 2px solid #000;
+        background-color: #124c81;
+        div{
+            padding-left: 5px;
+            padding-right: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .time{
+            border-right: 2px solid #000;
+            width: 40%;
+        }
+        .mission{
+            width: 60%;
+            min-height: 100%;
+            line-height: 20px;
+        }
+    }
+    .skip{
+        margin: 10px 0;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        min-height: 50px;
+        border: 2px solid #000;
+        background-color: #124c81; 
+    }
+}
