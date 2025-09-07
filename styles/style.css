@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-div {
+  background-color: wheat;
+  display: block;
+  margin: 20px auto;
+  width: 350px;
+  padding: 10px;
+}
+.input-div .high-inputs, .input-div .inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.input-div .high-inputs input, .input-div .inputs input {
+  width: 40%;
+}
+.input-div .high-inputs .duration, .input-div .high-inputs .mission, .input-div .inputs .duration, .input-div .inputs .mission {
+  width: 40%;
+}
+.input-div .high-inputs .duration input, .input-div .high-inputs .mission input, .input-div .inputs .duration input, .input-div .inputs .mission input {
+  width: 100%;
+}
+.input-div .high-inputs button, .input-div .inputs button {
+  height: 30px;
+  width: 30px;
+  align-self: flex-end;
+  background-image: url("../images/add.png");
+  background-size: cover;
+}
+.input-div .high-inputs .reset, .input-div .inputs .reset {
+  background-image: url("../images/reset.png");
+}
+.input-div .high-inputs p, .input-div .inputs p {
+  margin: 5px;
+  margin-left: 0px;
+}
+
+.durations {
+  width: 350px;
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+}
+.durations .duration {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  min-height: 50px;
+  border: 2px solid #000;
+  background-color: wheat;
+}
+.durations .duration div {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+}
+.durations .duration .time {
+  border-right: 2px solid #000;
+  width: 40%;
+}
+.durations .duration .mission {
+  width: 60%;
+  min-height: 100%;
+  line-height: 20px;
+}
+.durations .skip {
+  margin: 10px 0;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-height: 50px;
+  border: 2px solid #000;
+  background-color: wheat;
+}
